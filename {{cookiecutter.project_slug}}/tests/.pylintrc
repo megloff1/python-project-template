@@ -1,0 +1,22 @@
+[main]
+source-roots = ../src
+
+[messages control]
+disable =
+    missing-function-docstring,
+    missing-module-docstring,
+    missing-class-docstring,
+    too-many-arguments,
+    too-many-locals,
+    too-many-statements,
+    too-few-public-methods,
+    protected-access,
+    redefined-outer-name,
+    unused-argument,
+    duplicate-code,
+    magic-value-comparison,
+    use-implicit-booleaness-not-comparison,
+    no-self-use,
+    attribute-defined-outside-init,
+    invalid-name,
+    line-too-long

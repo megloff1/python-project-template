@@ -1,0 +1,31 @@
+stages:
+  - lint
+  - test
+
+variables:
+  UV_CACHE_DIR: .uv-cache
+
+default:
+  image: python:{{ cookiecutter.python_version }}-slim
+  before_script:
+    - pip install uv
+    - uv sync
+  cache:
+    key: uv-cache
+    paths:
+      - ${UV_CACHE_DIR}
+
+ruff-check:
+  stage: lint
+  script:
+    - uv run ruff check .
+
+ruff-format:
+  stage: lint
+  script:
+    - uv run ruff format --check .
+
+pytest:
+  stage: test
+  script:
+    - uv run pytest

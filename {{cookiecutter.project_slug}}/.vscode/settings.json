@@ -1,0 +1,27 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+  "python.analysis.extraPaths": ["src"],
+  "mypy-type-checker.args": [
+    "--config-file=${workspaceFolder}/pyproject.toml"
+  ],
+  "mypy.dmypyEnabled": false,
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "pylint.args": [
+    "--rcfile=${workspaceFolder}/pyproject.toml"
+  ],
+  "pylint.cwd": "${workspaceFolder}",
+  "pylint.path": [
+    "uv", "run", "pylint"
+  ],
+  "pylint.enabled": true
+}
+
