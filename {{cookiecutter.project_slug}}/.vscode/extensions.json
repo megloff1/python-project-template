@@ -4,6 +4,9 @@
     "ms-python.python",
     "ms-python.vscode-pylance",
     "ms-python.mypy-type-checker",
-    "astral-sh.uv"
+    "astral-sh.uv",
+    "auxislabs.python-uv-toolkit",
+    "ms-python.pylint",
+    "bierner.markdown-mermaid"
   ]
 }
